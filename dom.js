@@ -1,4 +1,4 @@
-console.log("Hola");
+console.log("Hola a todos");
 //console.log(document.querySelectorAll(".large"));
 //console.log(document.getElementById("result"));
 
