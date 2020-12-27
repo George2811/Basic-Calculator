@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #2f3542;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .calculator{
+    width: 25%;
+    height: 68%;
+    background: #1b1b1b;
+    border-radius: 15px;
+}
+/*------------SCREEN------------*/
+.container .calculator .screen{
+    margin: 30px;
+    padding: 30px 6px;
+    border-radius: 10px;
+    border-color: #1b1b1b;
+
+}
+.container .calculator .screen .show-result{
+    width: 100%;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+}
+.container .calculator .screen .show-result h1{
+    position: fixed;
+    margin-top: -23px;
+    color: #fff;
+    font-size: 30px;
+}
+/*------------NUMBERS------------*/
+.container .calculator .data{
+    width: 100%;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+}
+.container .calculator .data input{
+    padding: 16px 32px;
+    justify-content: space-between;
+    color: orangered;
+    margin: 5px 0px;
+    margin-left: 10px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+.container .calculator .data .large{
+    background: greenyellow;
+    padding: 16px 70px;    
+}
+.container .calculator .data .large-o{
+    background: #2f3542;
+    padding: 16px 70px;    
+}
+.container .calculator .data input:hover{
+    background-color: orangered;
+    color: #fff;
+    cursor: pointer;
+}
+/*-------------SPACE-------------*/
+.container .calculator .data .space{
+    justify-content: space-between;
+    background: transparent;
+    border: none;
+}
+.container .calculator .data .space:hover{
+    background-color: transparent;
+    border: none;
+    cursor:default;
+}
