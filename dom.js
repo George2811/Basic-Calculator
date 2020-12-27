@@ -1,6 +1,6 @@
 console.log("Hola");
 console.log(document.querySelectorAll(".large"));
-console.log(document.getElementById("result"));
+//console.log(document.getElementById("result"));
 
 //console.log(document.documentElement.getAttribute("lang"));
 //console.log(document.querySelector("input").getAttribute("class"));
