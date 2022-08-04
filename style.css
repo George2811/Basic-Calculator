@@ -13,8 +13,9 @@
     align-items: center;
 }
 .container .calculator{
-    width: 25%;
-    height: 68%;
+    min-width: 22rem;
+    max-width: 30rem;
+    height: 30rem;
     background: #1b1b1b;
     border-radius: 15px;
 }
@@ -39,12 +40,13 @@
     color: #fff;
     font-size: 30px;
 }
+
 /*------------NUMBERS------------*/
-.container .calculator .data{
+/* .container .calculator .data{
     width: 100%;
     padding: 15px 0px;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-wrap: wrap;
     background-color: transparent;
@@ -73,7 +75,48 @@
     background-color: orangered;
     color: #fff;
     cursor: pointer;
+} */
+
+
+.container .calculator .data{
+    width: 86%;
+    height: 66%;
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+
 }
+.container .calculator .data input{
+    border: 1px solid rgb(105, 105, 105);
+    height: 3.5rem;
+    min-width: 6rem;
+    color: orangered;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    outline: none;
+}
+.container .calculator .data .large{
+    border: none;
+    min-width: 12.6rem;
+    background: greenyellow;
+
+}
+.container .calculator .data .large-o{
+    min-width: 12.6rem;
+    background: #2f3542;
+}
+
+.container .calculator .data input:hover{
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    cursor: pointer;
+}
+
 /*-------------SPACE IN BLANK-------------*/
 .container .calculator .data .space{
     justify-content: space-between;
