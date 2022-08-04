@@ -13,8 +13,7 @@
     align-items: center;
 }
 .container .calculator{
-    min-width: 22rem;
-    max-width: 30rem;
+    width: 30rem;
     height: 30rem;
     background: #1b1b1b;
     border-radius: 15px;
@@ -42,42 +41,6 @@
 }
 
 /*------------NUMBERS------------*/
-/* .container .calculator .data{
-    width: 100%;
-    padding: 15px 0px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: transparent;
-}
-.container .calculator .data input{
-    padding: 16px 32px;
-    justify-content: space-between;
-    color: orangered;
-    margin: 5px 0px;
-    margin-left: 10px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    border: none;
-    outline: none;
-}
-.container .calculator .data .large{
-    background: greenyellow;
-    padding: 16px 70px;    
-}
-.container .calculator .data .large-o{
-    background: #2f3542;
-    padding: 16px 70px;    
-}
-.container .calculator .data input:hover{
-    background-color: orangered;
-    color: #fff;
-    cursor: pointer;
-} */
-
-
 .container .calculator .data{
     width: 86%;
     height: 66%;
@@ -127,4 +90,16 @@
     background-color: transparent;
     border: none;
     cursor:default;
+}
+
+@media (max-width: 472px) {
+    .container .calculator{
+        width: 20rem;
+    }
+    .container .calculator .data input{
+        min-width: 4rem;
+    }
+    .container .calculator .data .large, .container .calculator .data .large-o {
+        min-width: 8.5rem;
+    }
 }
